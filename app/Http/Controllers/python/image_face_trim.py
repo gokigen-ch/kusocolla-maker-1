@@ -13,6 +13,7 @@ import cv2
 import sys
 import os
 import shutil
+from copy import copy
 
 def rotate(img, deg):
 	#高さを定義
@@ -71,7 +72,21 @@ image_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cascade = cv2.CascadeClassifier(cascade_path)
 
 #物体認識（顔認識）の実行
-facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.2, minNeighbors=2, minSize=(10, 10))
+facerect = cascade.detectMultiScale(image_gray, scaleFactor=1.1, minNeighbors=2, minSize=(10, 10))
+
+# 一番大きい顔を一番前に持ってくる
+if len(facerect) > 0:
+	big = facerect[0][2] * facerect[0][3]
+	big_num = 0
+	i = 0
+	for rect in facerect:
+		if (rect[2] * rect[3]) > big:
+			big_num = i
+			big = rect[2] * rect[3]
+		i += 1
+	temp = copy(facerect[0])
+	facerect[0] = copy(facerect[big_num])
+	facerect[big_num] = copy(temp)
 
 print(0)
 print(len(facerect))
