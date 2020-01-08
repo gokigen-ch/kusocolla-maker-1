@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::resource('image', 'ImageController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
