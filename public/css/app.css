@@ -11991,6 +11991,7 @@ button.bg-line:focus {
 
 .app-top {
   background-image: url(/images/bg01.png?06b4608507d5cfb1af2b3310d3b9c82c);
+  background-position: center;
   background-size: cover;
   padding-top: 400px;
   padding-bottom: 150px;
