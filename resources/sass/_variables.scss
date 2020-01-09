@@ -7,13 +7,36 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$blue: #27386F;
+$pink: #D44071;
+$orange: #E85E1A;
+$yellow: #EAD954;
+$cyan: #4EADA6;
+$black: #282828;
+$gray: #CCCCCC;
+$twitter: #55acee;
+$line: #00c300;
+
+$colors: (
+  "blue": $blue,
+  "orange": $orange,
+  "yellow": $yellow,
+  "cyan": $cyan,
+  "black": $black,
+  "gray": $gray,
+  "twitter": $twitter,
+  "line": $line
+) !default;
+
+$theme-colors: (
+  "primary": $pink,
+  "secondary": $gray,
+  "success": $orange,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $pink,
+  "light": $gray,
+  "dark": $black,
+  "twitter": $twitter,
+  "line": $line
+);

@@ -14,67 +14,47 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <!-- TODO: フォントがXDのとおりにできてなくていけてなくて涙 #22 -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('ogp')
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <main>
+            @yield('content')
+        </main>
+        <footer class="bg-black text-white pt-5">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
+                <div class="row justify-content-center">
+                    <ul class="d-flex col-md-6 justify-content-center">
+                        <!-- TODO: #17 利用規約ページを作る -->
+                        <li class="d-block mx-2">利用規約</li>
+                        <!-- TODO: #19 プライバシーポリシーページを作る -->
+                        <li class="d-block mx-2">プライバシーポリシー</li>
+                        <!-- TODO: 運営団体ページを作る #18 -->
+                        <li class="d-block mx-2">運営団体</li>
                     </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+                </div>
+                <div class="row justify-content-center">
+                    <ul class="d-flex col-md-6 justify-content-center">
+                        <div class="col-md-6 mx-2">
+                            <a href="https://www.youtube.com/channel/UCkXtt1w82POw3L42un7ixrA">
+                                <img src="/logo.png" class="img-fluid" alt="ごきげんチャンネル公式" >
+                            </a>
+                        </div>
+                        <!-- TODO: #13 フッターに白い「動くクソコラメーカー」を表示する -->
+                        <div class="col-md-6 mx-2 logo">
+                            <img src="/logo-kusocolla-move.png" class="img-fluid py-5 hidariue-move-logo" alt="動く">
+                            <img src="/logo-kusocolla.png" class="img-fluid py-5" alt="クソコラメーカー">
+                        </div>
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        </footer>
     </div>
 </body>
 </html>
