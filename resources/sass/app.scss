@@ -1,1 +1,75 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Generate `.bg-*` color utilities
+// @include bg-variant('.bg-black', #282828);
+@each $color, $value in $theme-colors {
+    @debug '.bg-#{$color} #{$value}';
+    @include bg-variant('.bg-#{$color}', $value , true);
+}
+
+@each $color, $value in $colors {
+    @debug '.bg-#{$color} #{$value}';
+    @include bg-variant('.bg-#{$color}', $value , true);
+}
+
+// TODO: #16 劇画調の背景がレスポンシブ対応できてない
+.app-top{
+    background-image: url(bg01.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 150px;
+}
+
+label > input {
+    display:none; /* アップロードボタンのスタイルを無効にする */
+}
+
+.bg-frame{
+    background-image: url(frame.png);
+    background-size: cover;
+}
+
+.youtube{
+    // レスポンシブ対応。スマホでもアスペクト比を維持する
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+    iframe{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+.small{
+    font-size: 0.8rem;
+}
+
+.twitter-icon-size{
+    font-size: 1.4rem;
+}
+
+.line-icon-size{
+    font-size: 1.8rem;
+}
+
+.logo {
+    position: relative;
+    .hidariue-move-logo{
+        position: absolute;
+        transform: rotate(-10deg);
+        left: 10px;
+        top: -30px;
+    }
+}
