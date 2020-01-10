@@ -41,7 +41,7 @@
                     <div class="row d-flex justify-content-center my-3">
                         <!-- TODO: クソコラをLINEシェアするときの文言、ハッシュタグ、アカウントをちゃんと考えたい #23 -->
                         <button type="button"
-                            onclick="location.href='https://line.me/R/msg/text/?クソコラメイカーでクソコラを作ったよ★'"
+                            onclick="location.href='https://line.me/R/msg/text/?クソコラメイカーでクソコラを作ったよ★{{ request()->fullUrl() }}'"
                             class="col-md-5 btn btn-line btn-lg btn-block py-3">
                             <i class="fab fa-line line-icon-size px-1"></i>LINEでシェアする
                         </button>
