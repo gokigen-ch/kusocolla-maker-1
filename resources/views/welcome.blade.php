@@ -21,7 +21,7 @@
                     <div class="form-group text-center font-weight-bold row justify-content-center">
                         <label for="image" class="control-label btn btn-primary btn-lg btn-block py-4">
                             ファイルを選択
-                            <input type="file" id="image" name="image">
+                            <input type="file" accept="image/*" id="image" name="image">
                         </label>
                     </div>
                     <div class="row justify-content-center">
