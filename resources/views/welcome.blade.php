@@ -16,12 +16,13 @@
                     <p class="mb-0">顔が認識できなかったときは動物の写真が勝手に合成されるよ！</p>
                     <p>それはそれでおもしろいね！</p>
                 </div>
-                <form action="image" method="post" enctype="multipart/form-data" class="mb-5">
+                <form action="image" method="post" enctype="multipart/form-data" class="mb-5" id="image-form">
                     {{ csrf_field() }}
                     <div class="form-group text-center font-weight-bold row justify-content-center">
-                        <label for="image" class="control-label btn btn-primary btn-lg btn-block py-4">
+                        <label for="image" class="control-label btn btn-primary text-white btn-lg btn-block py-4">
                             ファイルを選択
-                            <input type="file" id="image" name="image">
+                            <input type="file" accept="image/*" id="image" name="image">
+                            <div class="preview"></div>
                         </label>
                     </div>
                     <div class="row justify-content-center">
