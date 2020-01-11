@@ -37,8 +37,11 @@ class ImageController extends Controller
     {
         \Log::info("post image");
 
+        $validatedData = $request->validate([
+            'image' => 'required|image'
+        ]);
+
         if ($request->file('image') != null) {
-            // TODO: 本当に画像ファイルかどうか、のバリデーションを追加したい
             if ($request->file('image')->isValid()) {
 
                 $imageName = basename($request->image->store('public/image'));
