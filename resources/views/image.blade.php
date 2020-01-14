@@ -19,6 +19,23 @@
             <div class="col-md-8 justify-content-center text-center font-weight-bold">
                 @if ($image != null)
                 <p>合成した画像</p>
+                <div class="kusocolla">
+                    <div class="kusocolla__face face-01">
+                        @for($i =0; $i<$image->face_num; $i++)
+                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+                        @endfor
+                    </div>
+                    <div class="kusocolla__face face-02">
+                        @for($i =0; $i<$image->face_num; $i++)
+                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+                        @endfor
+                    </div>
+                    <div class="kusocolla__face face-03">
+                        @for($i =0; $i<$image->face_num; $i++)
+                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+                        @endfor
+                    </div>
+                </div>
                 <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/add.{{$image->getExtension()}}" alt="image" style="max-width:100%">
                 <p>顔だけ切り出した画像</p>
                 @for($i =0; $i<$image->face_num; $i++)

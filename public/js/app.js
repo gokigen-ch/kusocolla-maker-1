@@ -37140,8 +37140,8 @@ function validFileType(file) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/gokigen-ch/portfolio/kusocolla-maker/dev1/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/html/gokigen-ch/portfolio/kusocolla-maker/dev1/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/html/gokigen-ch/portfolio/kusocolla-maker/dev2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/gokigen-ch/portfolio/kusocolla-maker/dev2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
