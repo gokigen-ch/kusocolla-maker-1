@@ -22,10 +22,12 @@
 // TODO: #16 劇画調の背景がレスポンシブ対応できてない
 .app-top{
     background-image: url(bg01.png);
-    background-position: center;
-    background-size: cover;
-    padding-top: 400px;
-    padding-bottom: 150px;
+    background-position: top;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 20vw;
+    padding-bottom: 10vw;
 }
 
 label > input {
