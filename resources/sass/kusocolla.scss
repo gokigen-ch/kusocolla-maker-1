@@ -1,8 +1,18 @@
 .kusocolla {
-    max-width: 1200px;
-    height: 630px;
-    background: red;
     position: relative;
+    width: 730px;
+    height: 365px;
+    overflow: hidden;
+
+    .kusocolla__img-fixed {
+        width: 100%;
+    }
+    .kusocolla__img-move {
+        position: absolute;
+    }
+    .kusocolla__img__inner {
+        position: relative;
+    }
 
     &__face {
         position: absolute;
@@ -10,28 +20,97 @@
         img {
             width: 100%;
             object-fit: cover;
+            border-radius: 50%;
+            overflow: hidden;
         }
     }
 
-    //顔-01
+    //左下
     .face-01 {
-        width: 200px;
-        height: 200px;
+        width: 60px;
+        height: 60px;
+        top: 70%;
+        left: 5%;
+        transform: rotate(-25deg);
+    }
+    //左上
+    .face-02 {
+        width: 100px;
+        height: 100px;
+        top: 7%;
+        left: 21%;
+        transform: rotate(-155deg);
+    }
+    //右上
+    .face-03 {
+        width: 50px;
+        height: 50px;
+        top: 17%;
+        left: 84%;
+        transform: rotate(-115deg);
+    }
+    //手前
+    .face-04 {
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 66%;
+        transform: rotate(25deg);
+    }
+
+    //中央
+    .face-05 {
+        top: 50%;
+        left: 50%;
+        margin-top: -120px;
+        margin-left: -120px;
+    }
+    .move01 {
         top: 0;
         left: 0;
+        animation: move01 2s 1;
     }
-    //顔-02
-    .face-02 {
-        width: 150px;
-        height: 150px;
-        top: 200px;
-        left: 200px;
+    .move02 {
+        width: 240px;
+        height: 240px;
+        animation: move02 5s 1;
     }
-    //顔-03
-    .face-03 {
-        width: 80px;
-        height: 80px;
-        top: 0;
-        left: 400px;
+    @keyframes move01 {
+        0% {
+            top: 220px;
+            left: 200px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        90% {
+            top: 160px;
+           -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+        }
+        100% {
+            top: 0;
+            left: 0;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+    }
+
+    @keyframes move02 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        50% {
+            width: 120px;
+            height: 120px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        100% {
+            width: 240px;
+            height: 240px;
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
     }
 }
