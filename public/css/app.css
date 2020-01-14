@@ -11990,11 +11990,13 @@ button.bg-line:focus {
 }
 
 .app-top {
-  background-image: url(/images/bg01.png?06b4608507d5cfb1af2b3310d3b9c82c);
-  background-position: center;
-  background-size: cover;
-  padding-top: 400px;
-  padding-bottom: 150px;
+  background-image: url(/images/bg01.png?8234fa30266c840a482b0744170e3971);
+  background-position: top;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 20vw;
+  padding-bottom: 10vw;
 }
 
 label > input {
