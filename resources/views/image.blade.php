@@ -66,7 +66,7 @@
                         <!-- TODO: クソコラをTwitterシェアするときの文言、ハッシュタグ、アカウントをちゃんと考えたい #23 -->
                         <button type="button" 
                             onclick="location.href='https://twitter.com/intent/tweet?text=クソコラメイカーでクソコラを作ったよ★&url={{ request()->fullUrl() }}&hashtags=gokigen&via=daisuke7924'"
-                            class="col-md-5 btn btn-twitter btn-lg btn-block py-3 text-white">
+                            class="col-md-5 btn btn-twitter btn-lg btn-block py-3 text-white d-flex justify-content-center align-content-center">
                             <i class="fab fa-twitter twitter-icon-size px-1"></i>Twitterでシェアする
                         </button>
                     </div>
@@ -74,7 +74,7 @@
                         <!-- TODO: クソコラをLINEシェアするときの文言、ハッシュタグ、アカウントをちゃんと考えたい #23 -->
                         <button type="button"
                             onclick="location.href='https://line.me/R/msg/text/?クソコラメイカーでクソコラを作ったよ★{{ request()->fullUrl() }}'"
-                            class="col-md-5 btn btn-line btn-lg btn-block py-3">
+                            class="col-md-5 btn btn-line btn-lg btn-block py-3 d-flex justify-content-center align-content-center">
                             <i class="fab fa-line line-icon-size px-1"></i>LINEでシェアする
                         </button>
                     </div>
