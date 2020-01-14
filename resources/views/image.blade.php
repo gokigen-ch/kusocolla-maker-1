@@ -12,54 +12,43 @@
 @endsection
 
 @section('content')
-<div class="app-top">
+    <div class="kusocolla">
+        <img class="kusocolla__img-fixed" src="/images/kusocolla01/kusocolla01-01.jpg" alt="">
+        <div class="kusocolla__face face-01">
+            @for($i =0; $i<$image->face_num; $i++)
+                <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+            @endfor
+        </div>
+        <div class="kusocolla__face face-02">
+            @for($i =0; $i<$image->face_num; $i++)
+                <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+            @endfor
+        </div>
+        <div class="kusocolla__face face-03">
+            @for($i =0; $i<$image->face_num; $i++)
+                <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+            @endfor
+        </div>
+        <div class="kusocolla__face face-05 move02">
+            @for($i =0; $i<$image->face_num; $i++)
+                <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+            @endfor
+        </div>
+        <div class="kusocolla__img-move move01">
+            <div class="kusocolla__img__inner">
+                <div class="kusocolla__face face-04">
+                    @for($i =0; $i<$image->face_num; $i++)
+                        <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
+                    @endfor
+                </div>
+                <img class="kusocolla__img-fixed" src="/images/kusocolla01/kusocolla01-02.png" alt="">
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row justify-content-center">
             <!-- TODO: #15: ちゃんとレスポンシブ対応する -->
             <div class="col-md-8 justify-content-center text-center font-weight-bold">
-                @if ($image != null)
-                <p>合成した画像</p>
-                <div class="kusocolla">
-                    <img class="kusocolla__img-fixed" src="/images/kusocolla01/kusocolla01-01.jpg" alt="">
-                    <div class="kusocolla__face face-01">
-                        @for($i =0; $i<$image->face_num; $i++)
-                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                        @endfor
-                    </div>
-                    <div class="kusocolla__face face-02">
-                        @for($i =0; $i<$image->face_num; $i++)
-                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                        @endfor
-                    </div>
-                    <div class="kusocolla__face face-03">
-                        @for($i =0; $i<$image->face_num; $i++)
-                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                        @endfor
-                    </div>
-                    <div class="kusocolla__face face-05 move02">
-                        @for($i =0; $i<$image->face_num; $i++)
-                            <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                        @endfor
-                    </div>
-                    <div class="kusocolla__img-move move01">
-                        <div class="kusocolla__img__inner">
-                            <div class="kusocolla__face face-04">
-                                @for($i =0; $i<$image->face_num; $i++)
-                                    <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                                @endfor
-                            </div>
-                            <img class="kusocolla__img-fixed" src="/images/kusocolla01/kusocolla01-02.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <p>顔だけ切り出した画像</p>
-                @for($i =0; $i<$image->face_num; $i++)
-                    <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
-                @endfor
-                <p>アップロードした画像</p>
-                <img src="{{url("/")}}/storage/image/{{$image->name}}" alt="image" style="max-width:100%">
-                @endif
-
                 <p class="font-weight-bold mb-1">URLをシェア</p>
                 <p class="font-weight-bold">{{ request()->fullUrl() }}</p>
                     <div class="row d-flex justify-content-center my-3">
