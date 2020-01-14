@@ -37062,10 +37062,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var form = document.querySelector('#image-form');
+var form = document.querySelector('.js-image-form');
 var label = form.querySelector('label');
 var input = label.querySelector('input');
-var preview = form.querySelector('.preview');
+var preview = form.querySelector('.js-preview');
 var button = form.querySelector('button');
 input.addEventListener('change', updateImageDisplay);
 
