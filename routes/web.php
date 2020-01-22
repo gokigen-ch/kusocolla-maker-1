@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('image', 'ImageController');
+Route::post('image', 'ImageController@store');
+Route::get('image/{image}/kusocolas/{kusocola}', 'ImageController@show');
