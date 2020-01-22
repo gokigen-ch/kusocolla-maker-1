@@ -75,7 +75,7 @@ class ImageController extends Controller
             \Log::debug('画像が指定されていません');
         }
 
-        return redirect("/image/{$image->id}");
+        return redirect("/image/{$image->id}/kusocolas/1");
     }
 
     /**
@@ -84,9 +84,14 @@ class ImageController extends Controller
      * @param  Image $image
      * @return \Illuminate\Http\Response
      */
-    public function show(Image $image)
+    public function show(Image $image, $kusocola)
     {
-        return view('image', ['image' => $image]);
+        return view('image', 
+            [
+                'image' => $image,
+                'kusocola' => $kusocola
+            ]
+        );
     }
 
     /**
