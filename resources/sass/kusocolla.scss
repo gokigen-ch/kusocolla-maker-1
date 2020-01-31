@@ -129,9 +129,6 @@
     .kusocolla02__img-fixed {
         width: 100%;
     }
-    .kusocolla02__img-move {
-        position: absolute;
-    }
     .kusocolla02__img__inner {
         position: relative;
         width: 100%;
@@ -149,13 +146,41 @@
         }
     }
 
-    //左下
+    //一番左
     .face-01 {
-        width: 60px;
-        height: 60px;
-        top: 70%;
-        left: 5%;
-        transform: rotate(-25deg);
+        top: 72%;
+        left: 4%;
+        width: 12%;
+        height: auto;
+        opacity: 1;
+        animation: face01 4s infinite step-end;
+    }
+    //左から2番目
+    .face-02 {
+        top: 26%;
+        left: 21%;
+        width: 12%;
+        height: auto;
+        opacity: 1;
+        animation: face02 4s infinite step-end;
+    }
+    //左から3番目
+    .face-03 {
+        top: 6%;
+        left: 65%;
+        width: 12%;
+        height: auto;
+        opacity: 1;
+        animation: face03 4s infinite step-end;
+    }
+    //左から4番目
+    .face-04 {
+        top: 41%;
+        left: 83%;
+        width: 12%;
+        height: auto;
+        opacity: 1;
+        animation: face04 4s infinite step-end;
     }
 
     @keyframes move01 {
@@ -194,6 +219,140 @@
         100% {
             background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
             background-size: 100%;
+        }
+    }
+    @keyframes face01 {
+        0% {
+            opacity: 0;
+        }
+        12% {
+            top: 72%;
+            left: 4%;
+            opacity: 1;
+        }
+        25% {
+            opacity: 0;
+        }
+        37% {
+            top: 72%;
+            left: 4%;
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        62% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        87% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes face02 {
+        0% {
+            opacity: 0;
+        }
+        12% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0;
+        }
+        37% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        62% {
+            opacity: 0;
+        }
+        75% {
+            top: 26%;
+            left: 21%;
+            opacity: 1;
+        }
+        87% {
+            top: 26%;
+            left: 21%;
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes face03 {
+        0% {
+            top: 6%;
+            left: 65%;
+            opacity: 1;
+        }
+        12% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 0;
+        }
+        37% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        62% {
+            opacity: 0;
+        }
+        75% {
+            top: 6%;
+            left: 65%;
+            opacity: 1;
+        }
+        87% {
+            opacity: 0;
+        }
+        100% {
+            top: 6%;
+            left: 65%;
+            opacity: 1;
+        }
+    }
+    @keyframes face04 {
+        0% {
+            opacity: 0;
+        }
+        12% {
+            opacity: 0;
+        }
+        25% {
+            top: 41%;
+            left: 83%;
+            opacity: 1;
+        }
+        37% {
+            top: 41%;
+            left: 83%;
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        62% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 0;
+        }
+        87% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
         }
     }
 }
