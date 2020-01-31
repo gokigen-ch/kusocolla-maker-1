@@ -12221,3 +12221,599 @@ label > input {
   }
 }
 
+.kusocolla02 {
+  position: relative;
+  width: 100%;
+  height: 50vw;
+  background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
+  background-size: 100%;
+  overflow: hidden;
+  -webkit-animation: move01 4s infinite step-end;
+          animation: move01 4s infinite step-end;
+}
+
+.kusocolla02 .kusocolla02__img-fixed {
+  width: 100%;
+}
+
+.kusocolla02 .kusocolla02__img__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.kusocolla02__heart {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -20vw;
+  color: #D44071;
+  font-size: 40vw;
+  -webkit-animation: heart 4s infinite step-end;
+          animation: heart 4s infinite step-end;
+  z-index: 1;
+}
+
+.kusocolla02__text {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
+.kusocolla02__face {
+  position: absolute;
+}
+
+.kusocolla02__face img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.kusocolla02 .face-01 {
+  top: 72%;
+  left: 4%;
+  width: 12%;
+  height: auto;
+  opacity: 1;
+  -webkit-animation: face01 4s infinite step-end;
+          animation: face01 4s infinite step-end;
+}
+
+.kusocolla02 .face-02 {
+  top: 26%;
+  left: 21%;
+  width: 12%;
+  height: auto;
+  opacity: 1;
+  -webkit-animation: face02 4s infinite step-end;
+          animation: face02 4s infinite step-end;
+}
+
+.kusocolla02 .face-03 {
+  top: 6%;
+  left: 65%;
+  width: 12%;
+  height: auto;
+  opacity: 1;
+  -webkit-animation: face03 4s infinite step-end;
+          animation: face03 4s infinite step-end;
+}
+
+.kusocolla02 .face-04 {
+  top: 41%;
+  left: 83%;
+  width: 12%;
+  height: auto;
+  opacity: 1;
+  -webkit-animation: face04 4s infinite step-end;
+          animation: face04 4s infinite step-end;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  12% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  25% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  37% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  50% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  62% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  75% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  87% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  100% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+}
+
+@keyframes heart {
+  0% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  12% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  25% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  37% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  50% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  62% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  75% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  87% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  100% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+}
+
+@keyframes move01 {
+  0% {
+    background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  12% {
+    background: url(/images/kusocolla02/kusocolla02-02.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  25% {
+    background: url(/images/kusocolla02/kusocolla02-03.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  37% {
+    background: url(/images/kusocolla02/kusocolla02-04.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(/images/kusocolla02/kusocolla02-05.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  62% {
+    background: url(/images/kusocolla02/kusocolla02-06.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  75% {
+    background: url(/images/kusocolla02/kusocolla02-07.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  87% {
+    background: url(/images/kusocolla02/kusocolla02-08.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
+    background-size: 100%;
+  }
+}
+
+@-webkit-keyframes face01 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    top: 72%;
+    left: 4%;
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    top: 72%;
+    left: 4%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes face01 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    top: 72%;
+    left: 4%;
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    top: 72%;
+    left: 4%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes face02 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 26%;
+    left: 21%;
+    opacity: 1;
+  }
+
+  87% {
+    top: 26%;
+    left: 21%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes face02 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 26%;
+    left: 21%;
+    opacity: 1;
+  }
+
+  87% {
+    top: 26%;
+    left: 21%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes face03 {
+  0% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+}
+
+@keyframes face03 {
+  0% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes face04 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    top: 41%;
+    left: 83%;
+    opacity: 1;
+  }
+
+  37% {
+    top: 41%;
+    left: 83%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes face04 {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    top: 41%;
+    left: 83%;
+    opacity: 1;
+  }
+
+  37% {
+    top: 41%;
+    left: 83%;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
