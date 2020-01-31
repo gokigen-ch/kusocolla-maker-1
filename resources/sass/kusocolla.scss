@@ -135,6 +135,29 @@
         height: 100%;
     }
 
+    &__heart {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        margin-left: -20vw;
+        color: #D44071;
+        font-size: 40vw;
+        animation: heart 4s infinite step-end;
+        z-index: 1;
+    }
+    &__text {
+        position: absolute;
+        bottom: 40%;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        font-size: 4vw;
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+
+    }
+
     &__face {
         position: absolute;
 
@@ -183,6 +206,54 @@
         animation: face04 4s infinite step-end;
     }
 
+    @keyframes heart {
+        0% {
+            bottom: 5%;
+            font-size: 40vw;
+            margin-left: -20vw;
+        }
+        12% {
+            bottom: 15%;
+            font-size: 30vw;
+            margin-left: -15vw;
+        }
+        25% {
+            bottom: 25%;
+            font-size: 20vw;
+            margin-left: -10vw;
+        }
+        37% {
+            bottom: 15%;
+            font-size: 30vw;
+            margin-left: -15vw;
+        }
+        50% {
+            bottom: 5%;
+            font-size: 40vw;
+            margin-left: -20vw;
+        }
+        62% {
+            bottom: 15%;
+            font-size: 30vw;
+            margin-left: -15vw;
+        }
+        75% {
+            bottom: 25%;
+            font-size: 20vw;
+            margin-left: -10vw;
+        }
+        87% {
+            bottom: 15%;
+            font-size: 30vw;
+            margin-left: -15vw;
+        }
+        100% {
+            bottom: 5%;
+            font-size: 40vw;
+            margin-left: -20vw;
+        }
+    }
+
     @keyframes move01 {
         0% {
             background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
@@ -221,6 +292,7 @@
             background-size: 100%;
         }
     }
+
     @keyframes face01 {
         0% {
             opacity: 0;

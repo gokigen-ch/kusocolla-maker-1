@@ -20,5 +20,7 @@
                     <img src="{{url("/")}}/storage/image/{{$image->getFolder()}}/{{$i}}.{{$image->getExtension()}}" alt="image" style="max-width:100%">
                 @endfor
             </div>
+        <i class="fas fa-heart kusocolla02__heart"></i>
+        <p class="kusocolla02__text">何か言葉を入れたい</p>
         </div>
     </div>

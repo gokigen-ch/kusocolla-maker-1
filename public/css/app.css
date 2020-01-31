@@ -12242,6 +12242,30 @@ label > input {
   height: 100%;
 }
 
+.kusocolla02__heart {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -20vw;
+  color: #D44071;
+  font-size: 40vw;
+  -webkit-animation: heart 4s infinite step-end;
+          animation: heart 4s infinite step-end;
+  z-index: 1;
+}
+
+.kusocolla02__text {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+
 .kusocolla02__face {
   position: absolute;
 }
@@ -12292,6 +12316,118 @@ label > input {
   opacity: 1;
   -webkit-animation: face04 4s infinite step-end;
           animation: face04 4s infinite step-end;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  12% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  25% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  37% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  50% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  62% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  75% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  87% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  100% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+}
+
+@keyframes heart {
+  0% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  12% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  25% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  37% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  50% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
+
+  62% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  75% {
+    bottom: 25%;
+    font-size: 20vw;
+    margin-left: -10vw;
+  }
+
+  87% {
+    bottom: 15%;
+    font-size: 30vw;
+    margin-left: -15vw;
+  }
+
+  100% {
+    bottom: 5%;
+    font-size: 40vw;
+    margin-left: -20vw;
+  }
 }
 
 @keyframes move01 {
