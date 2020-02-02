@@ -68,14 +68,14 @@
     .move01 {
         top: 0;
         left: 0;
-        animation: move01 2s 1;
+        animation: move01-01 2s 1;
     }
     .move02 {
         width: 240px;
         height: 240px;
-        animation: move02 5s 1;
+        animation: move01-02 5s 1;
     }
-    @keyframes move01 {
+    @keyframes move01-01 {
         0% {
             top: 220px;
             left: 200px;
@@ -95,7 +95,7 @@
         }
     }
 
-    @keyframes move02 {
+    @keyframes move01-02 {
         0% {
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -124,7 +124,7 @@
     background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
     background-size: 100%;
     overflow: hidden;
-    animation: move01 4s infinite step-end;
+    animation: move02-01 4s infinite step-end;
 
     .kusocolla02__img-fixed {
         width: 100%;
@@ -176,7 +176,7 @@
         width: 12%;
         height: auto;
         opacity: 1;
-        animation: face01 4s infinite step-end;
+        animation: face02-01 4s infinite step-end;
     }
     //左から2番目
     .face-02 {
@@ -185,7 +185,7 @@
         width: 12%;
         height: auto;
         opacity: 1;
-        animation: face02 4s infinite step-end;
+        animation: face02-02 4s infinite step-end;
     }
     //左から3番目
     .face-03 {
@@ -194,7 +194,7 @@
         width: 12%;
         height: auto;
         opacity: 1;
-        animation: face03 4s infinite step-end;
+        animation: face02-03 4s infinite step-end;
     }
     //左から4番目
     .face-04 {
@@ -203,7 +203,7 @@
         width: 12%;
         height: auto;
         opacity: 1;
-        animation: face04 4s infinite step-end;
+        animation: face02-04 4s infinite step-end;
     }
 
     @keyframes heart {
@@ -254,7 +254,7 @@
         }
     }
 
-    @keyframes move01 {
+    @keyframes move02-01 {
         0% {
             background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
             background-size: 100%;
@@ -293,7 +293,7 @@
         }
     }
 
-    @keyframes face01 {
+    @keyframes face02-01 {
         0% {
             opacity: 0;
         }
@@ -326,7 +326,7 @@
             opacity: 0;
         }
     }
-    @keyframes face02 {
+    @keyframes face02-02 {
         0% {
             opacity: 0;
         }
@@ -359,7 +359,7 @@
             opacity: 0;
         }
     }
-    @keyframes face03 {
+    @keyframes face02-03 {
         0% {
             top: 6%;
             left: 65%;
@@ -394,7 +394,7 @@
             opacity: 1;
         }
     }
-    @keyframes face04 {
+    @keyframes face02-04 {
         0% {
             opacity: 0;
         }
