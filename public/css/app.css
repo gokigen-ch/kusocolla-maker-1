@@ -12124,18 +12124,18 @@ label > input {
 .kusocolla .move01 {
   top: 0;
   left: 0;
-  -webkit-animation: move01 2s 1;
-          animation: move01 2s 1;
+  -webkit-animation: move01-01 2s 1;
+          animation: move01-01 2s 1;
 }
 
 .kusocolla .move02 {
   width: 240px;
   height: 240px;
-  -webkit-animation: move02 5s 1;
-          animation: move02 5s 1;
+  -webkit-animation: move01-02 5s 1;
+          animation: move01-02 5s 1;
 }
 
-@-webkit-keyframes move01 {
+@-webkit-keyframes move01-01 {
   0% {
     top: 220px;
     left: 200px;
@@ -12157,7 +12157,7 @@ label > input {
   }
 }
 
-@keyframes move01 {
+@keyframes move01-01 {
   0% {
     top: 220px;
     left: 200px;
@@ -12179,7 +12179,7 @@ label > input {
   }
 }
 
-@-webkit-keyframes move02 {
+@-webkit-keyframes move01-02 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -12200,7 +12200,7 @@ label > input {
   }
 }
 
-@keyframes move02 {
+@keyframes move01-02 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -12228,8 +12228,8 @@ label > input {
   background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
   background-size: 100%;
   overflow: hidden;
-  -webkit-animation: move01 4s infinite step-end;
-          animation: move01 4s infinite step-end;
+  -webkit-animation: move02-01 4s infinite step-end;
+          animation: move02-01 4s infinite step-end;
 }
 
 .kusocolla02 .kusocolla02__img-fixed {
@@ -12284,8 +12284,8 @@ label > input {
   width: 12%;
   height: auto;
   opacity: 1;
-  -webkit-animation: face01 4s infinite step-end;
-          animation: face01 4s infinite step-end;
+  -webkit-animation: face02-01 4s infinite step-end;
+          animation: face02-01 4s infinite step-end;
 }
 
 .kusocolla02 .face-02 {
@@ -12294,8 +12294,8 @@ label > input {
   width: 12%;
   height: auto;
   opacity: 1;
-  -webkit-animation: face02 4s infinite step-end;
-          animation: face02 4s infinite step-end;
+  -webkit-animation: face02-02 4s infinite step-end;
+          animation: face02-02 4s infinite step-end;
 }
 
 .kusocolla02 .face-03 {
@@ -12304,8 +12304,8 @@ label > input {
   width: 12%;
   height: auto;
   opacity: 1;
-  -webkit-animation: face03 4s infinite step-end;
-          animation: face03 4s infinite step-end;
+  -webkit-animation: face02-03 4s infinite step-end;
+          animation: face02-03 4s infinite step-end;
 }
 
 .kusocolla02 .face-04 {
@@ -12314,8 +12314,8 @@ label > input {
   width: 12%;
   height: auto;
   opacity: 1;
-  -webkit-animation: face04 4s infinite step-end;
-          animation: face04 4s infinite step-end;
+  -webkit-animation: face02-04 4s infinite step-end;
+          animation: face02-04 4s infinite step-end;
 }
 
 @-webkit-keyframes heart {
@@ -12430,7 +12430,7 @@ label > input {
   }
 }
 
-@keyframes move01 {
+@-webkit-keyframes move02-01 {
   0% {
     background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
     background-size: 100%;
@@ -12477,7 +12477,54 @@ label > input {
   }
 }
 
-@-webkit-keyframes face01 {
+@keyframes move02-01 {
+  0% {
+    background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  12% {
+    background: url(/images/kusocolla02/kusocolla02-02.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  25% {
+    background: url(/images/kusocolla02/kusocolla02-03.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  37% {
+    background: url(/images/kusocolla02/kusocolla02-04.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  50% {
+    background: url(/images/kusocolla02/kusocolla02-05.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  62% {
+    background: url(/images/kusocolla02/kusocolla02-06.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  75% {
+    background: url(/images/kusocolla02/kusocolla02-07.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  87% {
+    background: url(/images/kusocolla02/kusocolla02-08.jpg) no-repeat top;
+    background-size: 100%;
+  }
+
+  100% {
+    background: url(/images/kusocolla02/kusocolla02-01.jpg) no-repeat top;
+    background-size: 100%;
+  }
+}
+
+@-webkit-keyframes face02-01 {
   0% {
     opacity: 0;
   }
@@ -12519,7 +12566,7 @@ label > input {
   }
 }
 
-@keyframes face01 {
+@keyframes face02-01 {
   0% {
     opacity: 0;
   }
@@ -12561,7 +12608,7 @@ label > input {
   }
 }
 
-@-webkit-keyframes face02 {
+@-webkit-keyframes face02-02 {
   0% {
     opacity: 0;
   }
@@ -12603,7 +12650,7 @@ label > input {
   }
 }
 
-@keyframes face02 {
+@keyframes face02-02 {
   0% {
     opacity: 0;
   }
@@ -12645,51 +12692,7 @@ label > input {
   }
 }
 
-@-webkit-keyframes face03 {
-  0% {
-    top: 6%;
-    left: 65%;
-    opacity: 1;
-  }
-
-  12% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 0;
-  }
-
-  37% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  62% {
-    opacity: 0;
-  }
-
-  75% {
-    top: 6%;
-    left: 65%;
-    opacity: 1;
-  }
-
-  87% {
-    opacity: 0;
-  }
-
-  100% {
-    top: 6%;
-    left: 65%;
-    opacity: 1;
-  }
-}
-
-@keyframes face03 {
+@-webkit-keyframes face02-03 {
   0% {
     top: 6%;
     left: 65%;
@@ -12733,7 +12736,51 @@ label > input {
   }
 }
 
-@-webkit-keyframes face04 {
+@keyframes face02-03 {
+  0% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  62% {
+    opacity: 0;
+  }
+
+  75% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 6%;
+    left: 65%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes face02-04 {
   0% {
     opacity: 0;
   }
@@ -12775,7 +12822,7 @@ label > input {
   }
 }
 
-@keyframes face04 {
+@keyframes face02-04 {
   0% {
     opacity: 0;
   }
