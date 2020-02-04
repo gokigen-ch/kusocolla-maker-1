@@ -86,10 +86,9 @@ class ImageController extends Controller
      */
     public function show(Image $image, $kusocola)
     {
-        return view('image', 
+        return view('kusocolas.' . $kusocola, 
             [
-                'image' => $image,
-                'kusocola' => $kusocola
+                'image' => $image
             ]
         );
     }
