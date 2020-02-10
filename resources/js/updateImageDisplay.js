@@ -1,10 +1,11 @@
 var form = document.querySelector('.js-image-form')
-var label = form.querySelector('label')
-var input = label.querySelector('input')
-var preview = form.querySelector('.js-preview')
-var button = form.querySelector('button')
-
-input.addEventListener('change', updateImageDisplay);
+if(form != null){
+  var preview = form.querySelector('.js-preview')
+  var label = form.querySelector('label')
+  var input = label.querySelector('input')
+  var button = form.querySelector('button')
+  input.addEventListener('change', updateImageDisplay);
+}
 
 function updateImageDisplay() {
   // 前回アップロードした情報を削除

@@ -37056,6 +37056,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./updateImageDisplay */ "./resources/js/updateImageDisplay.js");
 
+__webpack_require__(/*! ./loading */ "./resources/js/loading.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37103,6 +37105,31 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/loading.js":
+/*!*********************************!*\
+  !*** ./resources/js/loading.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// loadingのdivを取得
+var loading = document.getElementById('js-loading-wait'); // contentsのdivを取得
+
+var contents = document.getElementById('js-loading-contents');
+
+if (loading != null && contents != null) {
+  // 読み込みが完了したら
+  window.addEventListener('load', function () {
+    console.log('画面読み込み完了'); // loadingのdivを非表示に
+
+    loading.style.display = 'none'; // contentsのdivを表示
+
+    contents.classList.remove('js-loading-hidden');
+  });
+}
+
+/***/ }),
+
 /***/ "./resources/js/updateImageDisplay.js":
 /*!********************************************!*\
   !*** ./resources/js/updateImageDisplay.js ***!
@@ -37111,11 +37138,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ (function(module, exports) {
 
 var form = document.querySelector('.js-image-form');
-var label = form.querySelector('label');
-var input = label.querySelector('input');
-var preview = form.querySelector('.js-preview');
-var button = form.querySelector('button');
-input.addEventListener('change', updateImageDisplay);
+
+if (form != null) {
+  var preview = form.querySelector('.js-preview');
+  var label = form.querySelector('label');
+  var input = label.querySelector('input');
+  var button = form.querySelector('button');
+  input.addEventListener('change', updateImageDisplay);
+}
 
 function updateImageDisplay() {
   // 前回アップロードした情報を削除

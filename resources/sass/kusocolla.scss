@@ -362,3 +362,14 @@
         }
     }
 }
+
+#js-loading-wait{
+  width: 100%;
+  height: 100vh;
+  background-color:#D44071;
+  position: relative;
+}
+
+.js-loading-hidden{
+  display: none;
+}

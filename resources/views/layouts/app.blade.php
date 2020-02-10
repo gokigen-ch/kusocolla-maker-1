@@ -21,6 +21,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('ogp')
+    @yield('preload')
 </head>
 <body>
     <div id="app">
