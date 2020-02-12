@@ -26,13 +26,15 @@
         }
     }
 
-    //左下
+    //中央
     .face-01 {
-        width: 60px;
-        height: 60px;
-        top: 70%;
-        left: 5%;
+        width: 45%;
+        height: auto;
+        top: 35%;
+        left: 24%;
         transform: rotate(-25deg);
+        opacity: 0.9;
+        animation: face01-01 4s 1;
     }
     //背景
     .move01 {
@@ -73,7 +75,14 @@
 
     }
 
-        //animation: move01-01 2s 1;
+    @keyframes face01-01 {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0.9;
+        }
+    }
     @keyframes move01-02 {
         0% {
             top: 0;
