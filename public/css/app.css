@@ -12055,6 +12055,12 @@ label > input {
   overflow: hidden;
 }
 
+@media screen and (max-width: 732px) {
+  .kusocolla {
+    height: 133.4vw;
+  }
+}
+
 .kusocolla .kusocolla__img-fixed {
   width: 100%;
 }

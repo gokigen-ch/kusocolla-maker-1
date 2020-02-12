@@ -4,6 +4,9 @@
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
+    @include mq(kusocolla01) {
+        height: 133.4vw;
+      }
 
     .kusocolla__img-fixed {
         width: 100%;
