@@ -40,3 +40,9 @@ $theme-colors: (
   "twitter": $twitter,
   "line": $line
 );
+
+//  Breakpoints
+$breakpoints: (
+  'basic': 'screen and (max-width: 768px)',
+  'kusocolla01': 'screen and (max-width: 732px)'
+) !default;

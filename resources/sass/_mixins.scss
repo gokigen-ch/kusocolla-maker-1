@@ -1,0 +1,5 @@
+@mixin mq($breakpoint: basic) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
