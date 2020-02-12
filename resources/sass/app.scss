@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
+@import 'mixins';
 @import 'variables';
 
 // Bootstrap
@@ -77,4 +78,8 @@ label > input {
 }
 
 // Kusocolla
-@import 'kusocolla';
+@import 'kusocolla01';
+@import 'kusocolla02';
+
+// Kusocolla
+@import 'js-loading-wait';
