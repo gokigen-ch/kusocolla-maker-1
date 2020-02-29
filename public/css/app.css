@@ -12055,6 +12055,12 @@ label > input {
   overflow: hidden;
 }
 
+@media screen and (max-width: 732px) {
+  .kusocolla {
+    height: 133.4vw;
+  }
+}
+
 .kusocolla .kusocolla__img-fixed {
   width: 100%;
 }
@@ -12087,8 +12093,8 @@ label > input {
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
   opacity: 0.9;
-  -webkit-animation: face01-01 4s 1;
-          animation: face01-01 4s 1;
+  -webkit-animation: face01-01 5s 1;
+          animation: face01-01 5s 1;
 }
 
 .kusocolla .move01 {
@@ -12100,44 +12106,44 @@ label > input {
 .kusocolla .move02 {
   top: 0;
   left: 0;
-  -webkit-animation: move01-02 2s 1;
-          animation: move01-02 2s 1;
+  -webkit-animation: move01-02 3s 1;
+          animation: move01-02 3s 1;
 }
 
 .kusocolla .move03 {
   left: 0;
   bottom: 0;
-  -webkit-animation: move01-03 2s 1;
-          animation: move01-03 2s 1;
+  -webkit-animation: move01-03 3s 1;
+          animation: move01-03 3s 1;
 }
 
 .kusocolla .move04 {
   top: 0;
   left: 0;
-  -webkit-animation: move01-04 2s 1;
-          animation: move01-04 2s 1;
+  -webkit-animation: move01-04 3s 1;
+          animation: move01-04 3s 1;
 }
 
 .kusocolla .move05 {
   top: 0;
   right: 0;
-  -webkit-animation: move01-05 2s 1;
-          animation: move01-05 2s 1;
+  -webkit-animation: move01-05 3s 1;
+          animation: move01-05 3s 1;
 }
 
 .kusocolla .move06 {
   top: 0;
   left: 0;
-  -webkit-animation: move01-06 2s 1;
-          animation: move01-06 2s 1;
+  -webkit-animation: move01-06 3s 1;
+          animation: move01-06 3s 1;
 }
 
 .kusocolla .move07 {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-animation: move01-07 3s 1;
-          animation: move01-07 3s 1;
+  -webkit-animation: move01-07 4s 1;
+          animation: move01-07 4s 1;
 }
 
 @-webkit-keyframes face01-01 {
